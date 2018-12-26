@@ -6,6 +6,7 @@ import Header from "./components/Header";
 
 class App extends Component {
   state = {
+    click: 0,
     mickey
   };
 
@@ -13,7 +14,6 @@ class App extends Component {
     return (
       <div>
         <Header>The Clickey Game</Header>
-
         <Wrapper>
           {this.state.mickey.map(mickey => (
             <MickeyCard key={mickey.id} image={mickey.image} />

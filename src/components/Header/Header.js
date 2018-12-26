@@ -2,11 +2,13 @@ import React from "react";
 import "./Header.css";
 
 const Header = props => (
-  <div>
-    <h1 className="title">{props.children}</h1>
-    <p>
-      A Memory Game. Click on each Mickey once but don't any more than once.
-    </p>
+  <div className="jumbotron">
+    <h1>The Clicky Game</h1>
+    <p>Click on an image to earn points, but don't click any more than once!</p>
+
+    <div className="card">
+      <div className="card-body">Score: 0 | Top Score: 0 </div>
+    </div>
   </div>
 );
 
