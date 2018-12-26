@@ -1,12 +1,12 @@
 .card {
   border-radius: 2px;
-  height: 250px;
+  height: 170px;
   margin: 1rem;
   position: relative;
-  width: 250px;
+  width: 190px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
-  background: yellow;
+  background: purple;
 }
 
 .card > .img-container {
