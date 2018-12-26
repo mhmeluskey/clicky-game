@@ -3,17 +3,18 @@ import mickey from "./mickey.json";
 import MickeyCard from "./components/MickeyCard/MickeyCard";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
+import Score from "./components/Score";
 
 class App extends Component {
   state = {
-    click: 0,
     mickey
   };
 
   render() {
     return (
       <div>
-        <Header>The Clickey Game</Header>
+        <Header />
+        <Score />
         <Wrapper>
           {this.state.mickey.map(mickey => (
             <MickeyCard key={mickey.id} image={mickey.image} />
@@ -23,4 +24,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
