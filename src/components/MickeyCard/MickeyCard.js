@@ -11,14 +11,9 @@ class MickeyCard extends Component {
     return (
       <div className="wrapper">
         {this.state.mickey.map(mickey => (
-          <div className="card">
+          <div key={mickey.id} className="card">
             <div className="img-container">
-              <img
-                src={mickey.image}
-                key={mickey.id}
-                onClick={this.handleIncrement}
-                alt="-mickey-character"
-              />
+              <img src={mickey.image} alt="-mickey-character" />
             </div>
           </div>
         ))}
