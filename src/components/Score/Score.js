@@ -6,8 +6,9 @@ class Score extends Component {
     return (
       <div className="scores">
         <div className="card ">
+          <h5 className="message">{this.props.message}</h5>
           <div className="card-body">
-            Score: {this.props.clicks} | Top Score: {this.props.topScore}
+            Score: {this.props.clicks} | Top Score:{this.props.topScore}
           </div>
         </div>
       </div>
